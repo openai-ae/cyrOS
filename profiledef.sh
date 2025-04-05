@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="blendOS"
-iso_label="BLENDOS_$(date +%Y%m)"
-iso_publisher="blendOS <https://blendos.co>"
-iso_application="blendOS Live/Rescue CD"
+iso_name="cyrOS"
+iso_label="CYROS_$(date +%Y%m)"
+iso_publisher="cyrOS <https://blendos.co>"
+iso_application="cyrOS Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="blend"
 buildmodes=('iso')
