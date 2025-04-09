@@ -33,7 +33,7 @@ jobs:
             -v "$GITHUB_WORKSPACE:/work" \
             -v "/mnt/temp:/tmp" \
             archlinux:latest /bin/bash -c "
-              pacman -Sy --noconfirm archiso wget &&
+              pacman -Sy --noconfirm archiso wget grub &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/moonlight.balens &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/balens &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/mlos.cpp &&
