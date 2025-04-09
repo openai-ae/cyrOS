@@ -50,6 +50,7 @@ echo -e "${green}[*] Installation complete!${no_color}"
 echo -e "${green}[*] To test the theme run: sddm-greeter --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme/${no_color}"
 
 ### Hyprland THEME
+mkdir dotfiles
 git clone --depth=1 https://github.com/openai-ae/cyrDE.git dotfiles
 cd dotfiles
 ./install.sh
