@@ -108,7 +108,7 @@ wireplumber
 networkmanager
 
 # OS installation and tweaks
-cyr-install
+#cyr-install
 
 # Spice
 spice-vdagent
