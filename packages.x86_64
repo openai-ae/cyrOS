@@ -124,6 +124,7 @@ qt6-svg
 qt6-virtualkeyboard 
 qt6-multimedia-ffmpeg
 hyprland
+grub
 grilo-plugins
 gvfs
 gvfs-afc
