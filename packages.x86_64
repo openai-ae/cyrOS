@@ -41,6 +41,7 @@ mdadm
 memtest86+
 mkinitcpio
 mkinitcpio-archiso
+edk2-shell
 mkinitcpio-nfs-utils
 modemmanager
 mtools
