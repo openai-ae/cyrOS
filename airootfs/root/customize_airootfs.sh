@@ -77,20 +77,6 @@ CONFIG_FILES=(
     sysctl sysusers tmpfiles blendos-logo.png
 )
 
-# Create basic directory structure
-echo "Creating directory structure..."
-mkdir -p "${INSTALL_ROOT}"{boot,dev,etc/{ld.so.conf.d,skel,profile.d},home,mnt,opt,proc,root,run,srv/http,sys,tmp,usr/{bin,include,lib,share/{misc,pixmaps},src},var/{cache,empty,games,lib/misc,local,log/old,opt,spool/mail,tmp}}
-
-# Set directory permissions
-echo "Setting permissions..."
-chmod 755 "${INSTALL_ROOT}"{boot,dev,etc,home,mnt,opt,srv/http,usr,var}
-chmod 555 "${INSTALL_ROOT}"{proc,sys}
-chmod 1777 "${INSTALL_ROOT}tmp"
-chmod 750 "${INSTALL_ROOT}root"
-chmod 755 "${INSTALL_ROOT}usr/"{bin,include,lib,share,src}
-chmod 775 "${INSTALL_ROOT}var/games"
-chmod 1777 "${INSTALL_ROOT}var/"{tmp,spool/mail}
-
 # FTP directory with special permissions
 echo "Creating FTP directory..."
 mkdir -p "${INSTALL_ROOT}srv/ftp"
