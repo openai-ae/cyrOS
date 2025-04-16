@@ -1,54 +1,5 @@
 # cyrOS pre-Packing HOOK
 
-### SDDM THEME
-#!/bin/bash
-
-## Keyitdev https://github.com/Keyitdev/sddm-astronaut-theme
-## Simplified version for Arch Linux ISO
-
-red='\033[0;31m'
-green='\033[0;32m'
-no_color='\033[0m'
-
-install_dependencies(){
-    echo -e "${green}[*] Installing required packages...${no_color}"
-    pacman -Sy --noconfirm --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg git
-}
-
-install_theme(){
-    echo -e "${green}[*] Installing sddm-astronaut-theme...${no_color}"
-    
-    # Clone theme
-    git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git /tmp/sddm-astronaut-theme
-    
-    # Install theme
-    mkdir -p /usr/share/sddm/themes/
-    cp -r /tmp/sddm-astronaut-theme /usr/share/sddm/themes/
-    
-    # Install fonts
-    mkdir -p /usr/share/fonts/
-    cp -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
-    
-    # Set default theme
-    echo "[Theme]
-Current=sddm-astronaut-theme" > /etc/sddm.conf
-    
-    echo "[General]
-InputMethod=qtvirtualkeyboard" > /etc/sddm.conf.d/virtualkbd.conf
-    
-    # Set default theme (Astronaut)
-    echo "ConfigFile=Themes/astronaut.conf" > /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
-    systemctl enable sddm
-}
-
-# Main execution
-clear
-echo -e "${green}Installing sddm-astronaut-theme for Arch Linux${no_color}"
-install_dependencies
-install_theme
-echo -e "${green}[*] Installation complete!${no_color}"
-echo -e "${green}[*] To test the theme run: sddm-greeter --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme/${no_color}"
-
 ### Hyprland THEME
 mkdir dotfiles
 git clone --depth=1 https://github.com/openai-ae/cyrDE.git dotfiles
