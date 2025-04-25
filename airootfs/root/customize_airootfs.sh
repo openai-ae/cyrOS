@@ -1,7 +1,7 @@
 # cyrOS pre-Packing HOOK
 
 ### Hyprland THEME
-git clone --depth=1 https://github.com/openai-ae/cyrDE.git dotfiles
+git clone --depth=1 https://github.com/openai-ae/cyrDE.git /root/dotfiles
 cd dotfiles
 chmod +rwx install.sh
 ./install.sh
