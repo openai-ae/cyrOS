@@ -118,10 +118,11 @@ baobab
 epiphany
 evince
 sddm
+gnome
 qt6-svg
 qt6-virtualkeyboard
 qt6-multimedia-ffmpeg
-hyprland
+#hyprland
 grub
 grilo-plugins
 gvfs
