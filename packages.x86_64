@@ -153,3 +153,7 @@ akshara-git
 grub
 git
 kitty
+
+# Windows Subsystem
+wine
+winetricks
