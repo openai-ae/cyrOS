@@ -118,7 +118,7 @@ baobab
 epiphany
 evince
 sddm
-gnome
+hyprland
 qt6-svg
 qt6-virtualkeyboard
 qt6-multimedia-ffmpeg
@@ -157,3 +157,25 @@ kitty
 # Windows Subsystem
 wine
 winetricks
+
+# cyrDE / cyrAPPS Mirror.
+brightnessctl
+bun-bin
+cliphist
+fastfetch
+hyprlock
+hyprshot
+hyprutils
+hyprwayland-scanner
+meson
+nwg-look
+python-materialyoucolor-git
+python-pyxdg
+sddm-theme-corners-git
+swappy
+swww
+ttf-font-awesome
+ttf-google-sans
+ttf-meslo-nerd-font-powerlevel10k
+wl-gammarelay-rs
+xdg-desktop-portal-gtk
