@@ -163,7 +163,6 @@ brightnessctl
 bun-bin
 cliphist
 fastfetch
-hyprlock
 hyprshot
 hyprutils
 hyprwayland-scanner
