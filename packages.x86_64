@@ -163,9 +163,6 @@ brightnessctl
 bun-bin
 cliphist
 fastfetch
-hyprshot
-hyprutils
-hyprwayland-scanner
 meson
 nwg-look
 python-materialyoucolor-git
@@ -179,14 +176,8 @@ ttf-meslo-nerd-font-powerlevel10k
 wl-gammarelay-rs
 xdg-desktop-portal-gtk
 calamares
-hyprlock
 
 # cyrOS Main
-hyprshot
-hyprcursor
-hypridle
-hyprlang
-hyprpicker
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
