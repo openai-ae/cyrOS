@@ -230,3 +230,6 @@ gtkmm3
 tinyxml2
 python-requests
 python-numpy
+
+# Android Support
+waydroid # not gonna add pre-packaged android image.
