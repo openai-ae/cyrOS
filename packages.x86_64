@@ -232,4 +232,4 @@ python-requests
 python-numpy
 
 # Android Support
-waydroid # not gonna add pre-packaged android image.
+waydroid
