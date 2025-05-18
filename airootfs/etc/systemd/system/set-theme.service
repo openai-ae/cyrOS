@@ -1,0 +1,9 @@
+[Unit]
+Description=set-theme-mat
+
+[Service]
+Type=oneshot
+ExecStart=/etc/set-mat.sh
+
+[Install]
+WantedBy=multi-user.target
