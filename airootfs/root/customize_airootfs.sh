@@ -1,10 +1,10 @@
 # cyrOS pre-Packing HOOK
 
 ### Hyprland THEME
-mkdir /tmp
-git clone --depth=1 https://github.com/openai-ae/cyrDE.git /root/dotfiles
-cd /root/dotfiles
-chmod +rwx install.sh
+#mkdir /tmp
+#git clone --depth=1 https://github.com/openai-ae/cyrDE.git /root/dotfiles
+#cd /root/dotfiles
+#chmod +rwx install.sh
 #./install.sh
 
 ### filesystem
@@ -134,4 +134,4 @@ echo "Filesystem blend installation complete!"
 
 ### CLEAN UP
 cd ..
-rm -rf dotfiles
+#rm -rf dotfiles
