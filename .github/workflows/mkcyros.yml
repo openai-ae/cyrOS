@@ -41,6 +41,8 @@ jobs:
               chmod +x balens &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
               mv cmares/* airootfs/ &&
+              git clone https://github.com/DimitrisMilonopoulos/mitsugen.git g &&
+              cp g/assets/* airootfs/root/.themes/
               ./balens
             "
 
