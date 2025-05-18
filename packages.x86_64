@@ -233,3 +233,29 @@ python-numpy
 
 # Android Support
 waydroid
+
+# SECURITY PACKAGES AHEAD
+ufw
+fail2ban
+firewalld
+iptables
+apparmor
+selinux
+audit
+cryptsetup
+gnupg
+tpm2-tools
+libpam-google-authenticator
+pass
+keepassxc
+aide
+rkhunter
+chkrootkit
+ossec
+openssl
+tor
+wireguard-tools
+stunnel
+grsecurity
+sysctl
+linux-hardened
