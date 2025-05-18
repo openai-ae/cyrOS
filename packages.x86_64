@@ -118,7 +118,8 @@ baobab
 epiphany
 evince
 sddm
-hyprland
+#hyprland
+gnome
 qt6-svg
 qt6-virtualkeyboard
 qt6-multimedia-ffmpeg
