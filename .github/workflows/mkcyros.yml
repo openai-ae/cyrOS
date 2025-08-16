@@ -34,7 +34,7 @@ jobs:
             -v "/mnt/temp:/tmp" \
             agners/archlinuxarm /bin/bash -c "
               pacman -Syu --noconfirm &&
-              pacman -Sy --noconfirm wget grub git make dosfstools mtools &&
+              pacman -Sy --noconfirm wget grub git make dosfstools mtools squashfs-tools &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
               git clone https://github.com/JackMyers001/archiso-aarch64.git &&
               cd archiso-aarch64 &&
