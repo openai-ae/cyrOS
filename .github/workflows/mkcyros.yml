@@ -32,7 +32,7 @@ jobs:
           docker run --rm --privileged \
             -v "$GITHUB_WORKSPACE:/work" \
             -v "/mnt/temp:/tmp" \
-            agners/archlinuxarm /bin/bash -c 
+            agners/archlinuxarm /bin/bash -c "
               pacman -Sy --noconfirm wget grub git &&
               pacman -Syu &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
