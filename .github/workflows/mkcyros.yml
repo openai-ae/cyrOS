@@ -41,8 +41,6 @@ jobs:
               make install &&
               cd .. &&
               mv cmares/* airootfs/ &&
-              git clone https://github.com/DimitrisMilonopoulos/mitsugen.git g &&
-              cp g/assets/* airootfs/root/.themes/ &&
               mkarchiso -v -r .
             "
 
