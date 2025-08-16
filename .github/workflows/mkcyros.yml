@@ -33,17 +33,21 @@ jobs:
             -v "$GITHUB_WORKSPACE:/work" \
             -v "/mnt/temp:/tmp" \
             agners/archlinuxarm /bin/bash -c "
-              pacman -Sy --noconfirm archiso wget grub git &&
+              pacman -Sy --noconfirm wget grub git &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/moonlight.balens &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/balens &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/mlos.cpp &&
               cp mlos.cpp /work/empty.cpp &&
               chmod +x balens &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
+              git clone https://github.com/JackMyers001/archiso-aarch64.git &&
+              cd archiso-aarch64 &&
+              make install
+              cd ..
               mv cmares/* airootfs/ &&
               git clone https://github.com/DimitrisMilonopoulos/mitsugen.git g &&
               cp g/assets/* airootfs/root/.themes/
-              ./balens
+              mkarchiso -v -r .
             "
 
       - name: Upload ISO artifact
