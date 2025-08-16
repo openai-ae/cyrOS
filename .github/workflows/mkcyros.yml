@@ -34,11 +34,6 @@ jobs:
             -v "/mnt/temp:/tmp" \
             agners/archlinuxarm /bin/bash -c "
               pacman -Sy --noconfirm wget grub git &&
-              wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/moonlight.balens &&
-              wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/balens &&
-              wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/mlos.cpp &&
-              cp mlos.cpp /work/empty.cpp &&
-              chmod +x balens &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
               git clone https://github.com/JackMyers001/archiso-aarch64.git &&
               cd archiso-aarch64 &&
