@@ -41,7 +41,7 @@ jobs:
               make install &&
               cd .. &&
               mv cmares/* airootfs/ &&
-              mkarchiso -v -r .
+              mkarchiso -v .
             "
 
       - name: Upload ISO artifact
