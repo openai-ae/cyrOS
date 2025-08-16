@@ -32,7 +32,7 @@ jobs:
           docker run --rm --privileged \
             -v "$GITHUB_WORKSPACE:/work" \
             -v "/mnt/temp:/tmp" \
-            archlinux:latest /bin/bash -c "
+            agners/archlinuxarm /bin/bash -c "
               pacman -Sy --noconfirm archiso wget grub git &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/moonlight.balens &&
               wget https://raw.githubusercontent.com/ParsaAslaniYC/ParsaAslaniYC/refs/heads/master/balens &&
