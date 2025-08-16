@@ -32,13 +32,14 @@ jobs:
           docker run --rm --privileged \
             -v "$GITHUB_WORKSPACE:/work" \
             -v "/mnt/temp:/tmp" \
-            agners/archlinuxarm /bin/bash -c "
+            agners/archlinuxarm /bin/bash -c 
+              pacman -Syu
               pacman -Sy --noconfirm wget grub git &&
               git clone https://github.com/openai-ae/cyrINSTALLER_cfg cmares &&
               git clone https://github.com/JackMyers001/archiso-aarch64.git &&
               cd archiso-aarch64 &&
-              make install
-              cd ..
+              make install &&
+              cd .. &&
               mv cmares/* airootfs/ &&
               git clone https://github.com/DimitrisMilonopoulos/mitsugen.git g &&
               cp g/assets/* airootfs/root/.themes/
